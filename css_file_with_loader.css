@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-image: url(image2.jpg);
+	background-repeat: repeat;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#DEDEDE
+	}
+	
+.header{
+	font-size: 24px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 0px;
+	margin: 0 auto;
+	margin-top:10px;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 280px;
+	background-color: #262626;
+	border-radius: 20px 20px 0 0;
+	}
+	
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border-top: 16px solid #91C4F2;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+ul.navbar{
+	list-style-type: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	}
+
+ul.navbar li a{
+	display: inline-block;
+	color:#DEDEDE;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+	font-size:16px;
+	background-color:#383838;
+	}
+	
+ul.navbar li {
+	float:left;
+	border-right: 2px solid #333333;
+	position: relative;
+	}
+
+ul.navbar li:first-child{
+	border-left: 2px solid #333333;
+}
+	
+ul.navbar li a:hover {
+	color:#91C4F2;
+	}
+	
+section{
+    max-width: 700px;
+    margin:0 auto;
+    padding:1em;	
+    text-indent:2em;
+	text-align: justify;
+	background-color:#262626;
+}
+p:first-of-type {
+    margin-top:0;
+}
